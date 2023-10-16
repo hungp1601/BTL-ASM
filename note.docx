@@ -1,0 +1,12 @@
+Note: Bài chương trình con nhập số nguyên n
+- Có cho sửa số nhập vào không ? không
+- Chương trình con có kq ra lưu ở đâu ? Ở thanh ghi ax 
+- Số giới hạn là: -32768  đến 32767  Vì phù hợp với thanh ghi 16 bit
+
+
+Note: Chương trình con in số nguyên ra màn hình.
+- Muốn in ra màn hình -> chuyển sang mã ASCII  ( + 30h )
+- Muốn nhập vào màn hình -> Trừ 30h 
+- Muộn hiện kết quả thì kết quả phải lưu trong thanh ghi Ax 
+- Giới hạn giống chương trình con nhập số nguyên
+

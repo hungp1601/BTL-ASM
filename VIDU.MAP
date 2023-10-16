@@ -1,0 +1,10 @@
+
+ Start  Stop   Length Name               Class
+
+ 00000H 000FFH 00100H _STACK             
+ 00100H 00111H 00012H DATA               
+ 00120H 0012FH 00010H CODE               
+
+Program entry point at 0012:0000
+Warning: No stack
+
