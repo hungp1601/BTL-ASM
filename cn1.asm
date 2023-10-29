@@ -1,31 +1,5 @@
-;-------------------------------
-;   MACRO HIEN MOT XAU KY TU	|
-; KET THUC BANG '$' RA MAN HINH	|
-;-------------------------------
-HienString MACRO xau
-	push AX DX
-	mov  DX,offset xau	; DX tro den dau xau
-	mov  AH,9		; Chuc nang hien 1 xau ky tu 
-	int  21h		; (ket thuc bang '$') len man hinh
-	pop  DX AX
-	ENDM
-;--------------------
-; MACRO XOA MAN HINH |
-;--------------------
-CLRSCR MACRO
-	push AX
-	mov  AH,0fh		; Chuc nang lay mode man hinh hien thoi
-	int  10h		; va so mode nam o AL
-	mov  AH,0		; Chuc nang dat mode cho man hinh
-	int  10h		; so mode can dat nam o AL
-	pop  AX
-	ENDM
-;-----------------------------
-
-
-
+INCLUDE lib1.asm 
 .MODEL small 
-.STACK 100h
 .DATA 
 
 m1 db 13,10, '                  Chuc nang copy tep ' 
@@ -45,8 +19,8 @@ file_name       db 30 dup(?)
 dem db 512 dup(?)
 tieptuc     db 13,10, '         Co tiep tuc CT (c/k)?'
 .CODE 
-PUBLIC _COPYTEP
-_COPYTEP PROC
+PUBLIC @COPYTEP$qv
+@COPYTEP$qv PROC
             L0:
                 clrscr
                 HienString m1
@@ -118,6 +92,6 @@ _COPYTEP PROC
                 jmp L0
             Exit:
                 ret
-_COPYTEP ENDP
+@COPYTEP$qv ENDP
 INCLUDE lib3.asm
 END

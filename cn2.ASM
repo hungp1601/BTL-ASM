@@ -1,6 +1,5 @@
 INCLUDE lib1.asm
 .model small
-.stack 100h
 .data
 outp1 db 10,13,'TINH TONG CAP SO CONG $'
 outp2 db 10,13,'---------------------- $'
