@@ -38,8 +38,6 @@ PUBLIC @CN2$qv
         jne Exit        ; neu khong phai thi nhay ve nhan exit(ve dos)
         jmp PS          ; con ko thi quay ve dau (bat dau lai chuong trinh)
     Exit:
-        mov ah,4ch      ; ve dos
-        int 21h
         ret
 @CN2$qv ENDP
 INCLUDE lib2.asm                                                                                                        

@@ -45,16 +45,16 @@ void main()
             break;
         }
         case 2: {
-            CN2();
-            break;
+        CN2();
+        break;
         }
         case 3: {
-            OMEM();
-            break;
+        OMEM();
+        break;
         }
         case 4: {
-            VeDOS();
-            break;
+        VeDOS();
+        break;
         }
         default:
             cout << "\n     Vao sai roi, cao to oi!";

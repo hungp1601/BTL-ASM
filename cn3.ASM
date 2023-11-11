@@ -1,7 +1,7 @@
 INCLUDE lib1.asm
 .MODEL small
 .DATA
-	M1    db 'May tinh dang dung co o mem không ? $'
+	M1    db 'May tinh dang dung co o mem khong ? $'
 	co    db 'Co $'
 	khong db 'Khong $'
 	M2    db 13,10,'So luong o mem ma may tinh co la : $'
